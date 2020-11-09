@@ -6,13 +6,11 @@ function NavBar() {
     return (
         <>
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">Poc-talk</Navbar.Brand>
+                <Navbar.Brand href="/">Poc-talk</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">About</Nav.Link>
-                        <Nav.Link href="#features">Resources</Nav.Link>
-                        <Nav.Link href="#pricing">Contact</Nav.Link>
+                        <Nav.Link href="/about">About</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
