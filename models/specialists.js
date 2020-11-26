@@ -8,6 +8,9 @@ const specialistsSchema = new Schema(
           trim: true,
           required: "Enter the name of the specialist"
         },
+        nickname: {
+          type: String
+        },
         organization: {
           type: String
         },
@@ -15,16 +18,23 @@ const specialistsSchema = new Schema(
             type: String,
             required: "enter the specialty of the Mental Health Professional"
           },
+        newclients:{
+          type: String,
+          required: true
+        },
+        typeclients:{
+          type:String
+        },
         cost: {
-            type: Number,
+            type: String,
             trim: true
           },
         ethnicity: {
-            type: Number,
+            type: String,
             trim: true
           },
         gender: {
-            type: Number,
+            type: String,
             trim: true
           },
         date: {

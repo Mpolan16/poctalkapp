@@ -17,10 +17,8 @@ if (process.env.NODE_ENV === "production") {
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/project3", { useNewUrlParser: true });
 
-// Add routes, both API and view
-app.use(routes);
-
-
+// routes
+app.use(require);
 
 // Start the API server
 app.listen(PORT, function() {
