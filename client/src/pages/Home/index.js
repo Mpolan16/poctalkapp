@@ -7,6 +7,12 @@ import { ContextApi } from '../../util/ContextApi.js';
 function Home() {
     const [specialists, setSpecialists] = useContext(ContextApi);
 
+    // make api call based on on click search
+    
+    // set state 
+
+    // print out cards 
+
     return (
         <>
             <Searchbar />

@@ -10,24 +10,23 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Resources from './pages/Resources';
 
-import {SpecialistsProvider} from './util/ContextApi.js';
+import { SpecialistsProvider } from './util/ContextApi.js';
 
 function App() {
   return (
 
-    <Router>   
-          <SpecialistsProvider >
-         <NavBar/>
+    <Router>
+      <SpecialistsProvider >
+        <NavBar />
         <Switch>
-        <Route exact path={"/"} component={Home}/>      
-        <Route exact path={"/about"} component={About}/>      
-        <Route exact path={"/contact"} component={Contact}/>      
-        <Route exact path={"/resources"} component={Resources}/>      
+          <Route exact path={"/"} component={Home} />
+          <Route exact path={"/about"} component={About} />
+          <Route exact path={"/contact"} component={Contact} />
+          <Route exact path={"/resources"} component={Resources} />
         </Switch>
-        <Footer/>
-        </SpecialistsProvider>
+        <Footer />
+      </SpecialistsProvider>
     </Router>
-   
 
   );
 }

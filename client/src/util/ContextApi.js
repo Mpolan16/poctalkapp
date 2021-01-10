@@ -33,10 +33,7 @@ export const SpecialistsProvider = props => {
     // Passes the data in porps 
     return (
         <ContextApi.Provider value={[specialists, setSpecialists]} >
-          {props.children} 
-        </ContextApi.Provider > 
+            {props.children}
+        </ContextApi.Provider >
     );
-
-    // return <ContextApi.Provider value={[specialists, setSpecialists]} {...props} />;
 };
-    
